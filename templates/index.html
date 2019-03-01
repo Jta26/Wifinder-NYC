@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="pragma" content="no-cache" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+    integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+    crossorigin=""/>
+
+    <link rel='stylesheet' href="{{ url_for('static', filename = 'style.css') }}"/>
+    
+    <title>WiFinder NYC</title>
+</head>
+<body>
+    <div id='map-wrapper'>
+        <div id='header'>
+                <p>NYC WiFinder</p>
+        </div>
+        <div id='map'></div>
+        <button id='btnRouse' onclick="Rouse()">WiFind!</button>
+
+        <div id='after'>
+                <p id='coordinates-x'></p>
+                <p id='coordinates-y'></p>
+                <p id='footnote'>Created by <a href='http://joelaustin.net'>Joel Austin</a> based on the data found at: <a href='https://opendata.cityofnewyork.us/'>https://opendata.cityofnewyork.us/</a></p>
+        </div> 
+    </div>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+ integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+ crossorigin=""></script>
+ <script src="{{ url_for('static', filename = 'index.js') }}"></script>
+ 
+</body>
+
+<script>
+
+</script>
+</html>
