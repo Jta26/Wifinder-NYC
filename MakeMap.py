@@ -14,7 +14,7 @@ df = pandas.DataFrame(columns=['lon', 'lat', 'name', 'details'])
 for i in range(0, len(output['data'])):
     df.loc[i] = [
         output['data'][i][16],
-        output['data'][i][14],
+        output['data'][i][15],
         output['data'][i][22],
         output['data'][i][20]
     ]
