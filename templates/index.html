@@ -19,7 +19,10 @@
                 <p>NYC WiFinder</p>
         </div>
         <div id='map'></div>
-        <button id='btnRouse' onclick="Rouse()">WiFind!</button>
+        <div id='btnLoading'>
+            <button id='btnRouse' onclick="Rouse()">WiFind!</button>
+            <img id='loading' src="{{ url_for('static', filename = '25.gif') }}"/></div>
+        </div>
 
         <div id='after'>
                 <p id='coordinates-x'></p>

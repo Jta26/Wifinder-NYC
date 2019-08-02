@@ -26,6 +26,13 @@ $jq(document).ready(() => {
 })
 
 function Rouse() {
+    var loading = document.getElementById('loading');
+    var btn = document.getElementById('btnRouse');
+    loading.style.visibility = 'visible';
+    loading.style.display = 'block';
+    console.log('test')
+    btn.style.visibility = 'hidden';
+    btn.style.display = 'none';
     data = {
         // "lat" : $jq('#coordinates-x').text(),
         "lat": map.getCenter().lat,
@@ -45,11 +52,21 @@ function Rouse() {
                 point[1] = parseFloat(point[1])
                 placePoint(point[0], point[1], point[3], point[4]);
             });
+            loading.style.visibility = 'hidden';
+            loading.style.display = 'none';
+            btn.style.visibility = 'visible';
+            btn.style.display = 'block';
         },
         error: (request, err) => {
+            loading.style.visibility = 'hidden';
+            loading.style.display = 'none';
+            btn.style.visibility = 'visible';
+            btn.style.display = 'block';
             console.log(JSON.stringify(request));
         }
-    })};
+    })
+};
+
 
 
 function placePoint(lat, lon, SSID, desc) {

@@ -40,9 +40,9 @@ html {
     box-shadow: 1px 1px 30px 3px white;
 }
 #map-wrapper button {
-    font-size: 150%;
+    font-size: 100%;
     width: 20%;
-    margin: 80px auto 0 auto;
+    margin: 10px auto 10px auto;
     display: inline-block;
     border: none;
     padding: 1rem 2rem;
@@ -56,14 +56,23 @@ html {
                 transform 150ms ease;
     -webkit-appearance: none;
     -moz-appearance: none;
+    z-index: -3;
     
 }
-
+#loading {
+    display: none;
+    visibility: hidden;
+    margin: 10px auto 10px auto;
+    box-shadow: 1px 1px 30px 3px white;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+}
 #after {
     position: fixed;
     bottom: 0;
     right: 0;
     text-align: right;
+    z-index: 2
 }
 #after p {
     color: white;
