@@ -1,3 +1,4 @@
 Flask==1.0.2
 Folium==0.10.0
 Pandas==0.24.2
+gunicorn==19.9.0
