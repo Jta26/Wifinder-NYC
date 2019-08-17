@@ -1,6 +1,9 @@
 # Wifinder-NYC
 This Repository hosts a Flask app I wrote that serves a website that finds the 20 closest wifi access points to the specified location. The project makes use of Leaflet.js in order to select coordinates and return points on the map. Each point on the map is clickable and contains the SSID and some details about the hotpot.
 
+## View Project
+View the project [Here](https://wifinder-nyc.herokuapp.com/).
+
 ## Up and Running
 To get this project running locally. You need a Flask, Pandas, as well as Folium.
 > pip install Flask
